@@ -1,0 +1,268 @@
+[gd_scene load_steps=25 format=2]
+
+[ext_resource path="res://assets/tilesheet/spritesheet_retina.png" type="Texture" id=1]
+[ext_resource path="res://assets/tilesheet/stickman-sheet.png" type="Texture" id=2]
+[ext_resource path="res://Player.gd" type="Script" id=3]
+[ext_resource path="res://assets/Fonts/font.tres" type="DynamicFont" id=4]
+[ext_resource path="res://controls/joystick/joystick_circle.png" type="Texture" id=5]
+[ext_resource path="res://controls/joystick/joystick_arrow_default.png" type="Texture" id=6]
+[ext_resource path="res://controls/joystick/joystick_arrow_pressed.png" type="Texture" id=7]
+
+[sub_resource type="ConvexPolygonShape2D" id=1]
+points = PoolVector2Array( 0, 0, 128, 0, 128, 128, 0, 128 )
+
+[sub_resource type="ConvexPolygonShape2D" id=2]
+points = PoolVector2Array( 0, 0, 128, 0, 128, 128, 0, 128 )
+
+[sub_resource type="ConvexPolygonShape2D" id=3]
+points = PoolVector2Array( 0, 0, 128, 0, 128, 128, 0, 128 )
+
+[sub_resource type="ConvexPolygonShape2D" id=4]
+points = PoolVector2Array( 0, 0, 128, 0, 128, 128, 0, 128 )
+
+[sub_resource type="TileSet" id=5]
+0/name = "spritesheet_retina.png 0"
+0/texture = ExtResource( 1 )
+0/tex_offset = Vector2( 0, 0 )
+0/modulate = Color( 1, 1, 1, 1 )
+0/region = Rect2( 128, 1152, 128, 128 )
+0/tile_mode = 0
+0/occluder_offset = Vector2( 0, 0 )
+0/navigation_offset = Vector2( 0, 0 )
+0/shape_offset = Vector2( 0, 0 )
+0/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+0/shape = SubResource( 1 )
+0/shape_one_way = false
+0/shape_one_way_margin = 1.0
+0/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 1 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+0/z_index = 0
+1/name = "spritesheet_retina.png 1"
+1/texture = ExtResource( 1 )
+1/tex_offset = Vector2( 0, 0 )
+1/modulate = Color( 1, 1, 1, 1 )
+1/region = Rect2( 256, 1152, 128, 128 )
+1/tile_mode = 0
+1/occluder_offset = Vector2( 0, 0 )
+1/navigation_offset = Vector2( 0, 0 )
+1/shape_offset = Vector2( 0, 0 )
+1/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+1/shape = SubResource( 2 )
+1/shape_one_way = false
+1/shape_one_way_margin = 1.0
+1/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 2 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+1/z_index = 0
+2/name = "spritesheet_retina.png 2"
+2/texture = ExtResource( 1 )
+2/tex_offset = Vector2( 0, 0 )
+2/modulate = Color( 1, 1, 1, 1 )
+2/region = Rect2( 768, 1024, 128, 128 )
+2/tile_mode = 0
+2/occluder_offset = Vector2( 0, 0 )
+2/navigation_offset = Vector2( 0, 0 )
+2/shape_offset = Vector2( 0, 0 )
+2/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+2/shape = SubResource( 3 )
+2/shape_one_way = false
+2/shape_one_way_margin = 1.0
+2/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 3 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+2/z_index = 0
+3/name = "spritesheet_retina.png 3"
+3/texture = ExtResource( 1 )
+3/tex_offset = Vector2( 0, 0 )
+3/modulate = Color( 1, 1, 1, 1 )
+3/region = Rect2( 512, 640, 128, 128 )
+3/tile_mode = 0
+3/occluder_offset = Vector2( 0, 0 )
+3/navigation_offset = Vector2( 0, 0 )
+3/shape_offset = Vector2( 0, 0 )
+3/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+3/shape = SubResource( 4 )
+3/shape_one_way = false
+3/shape_one_way_margin = 1.0
+3/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 4 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+3/z_index = 0
+
+[sub_resource type="AtlasTexture" id=6]
+flags = 4
+atlas = ExtResource( 2 )
+region = Rect2( 404, 202, 202, 202 )
+
+[sub_resource type="AtlasTexture" id=7]
+flags = 4
+atlas = ExtResource( 2 )
+region = Rect2( 606, 202, 202, 202 )
+
+[sub_resource type="AtlasTexture" id=8]
+flags = 4
+atlas = ExtResource( 2 )
+region = Rect2( 0, 404, 202, 202 )
+
+[sub_resource type="AtlasTexture" id=9]
+flags = 4
+atlas = ExtResource( 2 )
+region = Rect2( 0, 0, 202, 202 )
+
+[sub_resource type="AtlasTexture" id=10]
+flags = 4
+atlas = ExtResource( 2 )
+region = Rect2( 202, 0, 202, 202 )
+
+[sub_resource type="AtlasTexture" id=11]
+flags = 4
+atlas = ExtResource( 2 )
+region = Rect2( 404, 0, 202, 202 )
+
+[sub_resource type="AtlasTexture" id=12]
+flags = 4
+atlas = ExtResource( 2 )
+region = Rect2( 606, 0, 202, 202 )
+
+[sub_resource type="AtlasTexture" id=13]
+flags = 4
+atlas = ExtResource( 2 )
+region = Rect2( 0, 202, 202, 202 )
+
+[sub_resource type="AtlasTexture" id=14]
+flags = 4
+atlas = ExtResource( 2 )
+region = Rect2( 202, 202, 202, 202 )
+
+[sub_resource type="AtlasTexture" id=15]
+flags = 4
+atlas = ExtResource( 2 )
+region = Rect2( 202, 404, 202, 202 )
+
+[sub_resource type="SpriteFrames" id=16]
+animations = [ {
+"frames": [ SubResource( 6 ), SubResource( 7 ), SubResource( 8 ), SubResource( 6 ), SubResource( 6 ), SubResource( 6 ), SubResource( 6 ), SubResource( 6 ), SubResource( 6 ), SubResource( 6 ) ],
+"loop": true,
+"name": "idle",
+"speed": 5.0
+}, {
+"frames": [ SubResource( 9 ), SubResource( 10 ), SubResource( 11 ), SubResource( 12 ), SubResource( 13 ), SubResource( 14 ) ],
+"loop": true,
+"name": "walk",
+"speed": 5.0
+}, {
+"frames": [ SubResource( 15 ) ],
+"loop": true,
+"name": "jump",
+"speed": 5.0
+} ]
+
+[sub_resource type="CapsuleShape2D" id=17]
+radius = 26.6147
+height = 42.1926
+
+[node name="Node2D" type="Node2D"]
+
+[node name="TileMap" type="TileMap" parent="."]
+scale = Vector2( 0.5, 0.5 )
+tile_set = SubResource( 5 )
+cell_size = Vector2( 128, 128 )
+format = 1
+tile_data = PoolIntArray( -458760, 2, 0, -458759, 2, 0, -458758, 2, 0, -458757, 2, 0, -458756, 2, 0, -458755, 2, 0, -458754, 2, 0, -458753, 2, 0, -524288, 2, 0, -524287, 2, 0, -524286, 2, 0, -524285, 2, 0, -524284, 2, 0, -524283, 2, 0, -524282, 2, 0, -524281, 2, 0, -524280, 2, 0, -524279, 2, 0, -524278, 2, 0, -524277, 2, 0, -524276, 2, 0, -524275, 2, 0, -393224, 2, 0, -458739, 2, 0, -327688, 2, 0, -393203, 2, 0, -262152, 2, 0, -262147, 3, 0, -262146, 3, 0, -262145, 3, 0, -327680, 3, 0, -327679, 3, 0, -327678, 3, 0, -327677, 3, 0, -327676, 3, 0, -327675, 3, 0, -327674, 3, 0, -327673, 3, 0, -327670, 3, 0, -327667, 2, 0, -196616, 2, 0, -262131, 2, 0, -131080, 2, 0, -196595, 2, 0, -65544, 2, 0, -65541, 3, 0, -65540, 3, 0, -65539, 3, 0, -65538, 3, 0, -65537, 3, 0, -131072, 3, 0, -131071, 3, 0, -131068, 3, 0, -131067, 3, 0, -131066, 3, 0, -131065, 3, 0, -131064, 3, 0, -131059, 2, 0, -8, 2, 0, -65523, 2, 0, 65528, 2, 0, 13, 2, 0, 131064, 2, 0, 131067, 3, 0, 131070, 3, 0, 131071, 3, 0, 65536, 3, 0, 65537, 3, 0, 65538, 3, 0, 65539, 3, 0, 65540, 3, 0, 65541, 3, 0, 65542, 3, 0, 65543, 3, 0, 65544, 3, 0, 65545, 3, 0, 65546, 3, 0, 65549, 2, 0, 196600, 2, 0, 131085, 2, 0, 262136, 2, 0, 196621, 2, 0, 327672, 2, 0, 327675, 3, 0, 327676, 3, 0, 327677, 3, 0, 327678, 3, 0, 327679, 3, 0, 262144, 3, 0, 262145, 3, 0, 262149, 3, 0, 262150, 3, 0, 262151, 3, 0, 262152, 3, 0, 262157, 2, 0, 393208, 2, 0, 327693, 2, 0, 458744, 2, 0, 393229, 2, 0, 524280, 2, 0, 524283, 3, 0, 524284, 3, 0, 524285, 3, 0, 524286, 3, 0, 524287, 3, 0, 458752, 3, 0, 458753, 3, 0, 458754, 3, 0, 458755, 3, 0, 458756, 3, 0, 458757, 3, 0, 458758, 3, 0, 458759, 3, 0, 458760, 3, 0, 458761, 3, 0, 458762, 3, 0, 458765, 2, 0, 589816, 2, 0, 524301, 2, 0, 655352, 2, 0, 589837, 2, 0, 720888, 2, 0, 720889, 2, 0, 720890, 2, 0, 720891, 2, 0, 720892, 2, 0, 720893, 2, 0, 720894, 2, 0, 720895, 2, 0, 655360, 2, 0, 655361, 2, 0, 655362, 2, 0, 655363, 2, 0, 655364, 2, 0, 655365, 2, 0, 655366, 2, 0, 655367, 2, 0, 655368, 2, 0, 655369, 2, 0, 655370, 2, 0, 655371, 2, 0, 655372, 2, 0, 655373, 2, 0 )
+
+[node name="Player" type="KinematicBody2D" parent="."]
+script = ExtResource( 3 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="Player"]
+position = Vector2( -3, 0 )
+scale = Vector2( 0.7, 0.7 )
+frames = SubResource( 16 )
+animation = "idle"
+frame = 7
+speed_scale = 2.0
+playing = true
+
+[node name="Camera2D" type="Camera2D" parent="Player"]
+offset = Vector2( 200, 0 )
+current = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Player"]
+position = Vector2( 0, -3 )
+shape = SubResource( 17 )
+
+[node name="Coordinates" type="Label" parent="Player"]
+margin_left = 37.9685
+margin_top = -25.2693
+margin_right = 64.9685
+margin_bottom = 3.7307
+custom_fonts/font = ExtResource( 4 )
+text = "0,0"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Name" type="Label" parent="Player"]
+margin_left = 37.9685
+margin_top = -57.2693
+margin_right = 64.9685
+margin_bottom = -28.2693
+custom_fonts/font = ExtResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="joystick_circle" type="Sprite" parent="CanvasLayer"]
+position = Vector2( 169.544, 504.888 )
+texture = ExtResource( 5 )
+
+[node name="joystick_circle2" type="Sprite" parent="CanvasLayer"]
+position = Vector2( 935.056, 499.589 )
+texture = ExtResource( 5 )
+
+[node name="Jump" type="TouchScreenButton" parent="CanvasLayer"]
+position = Vector2( 894.469, 449.763 )
+scale = Vector2( 0.398959, 0.398959 )
+normal = ExtResource( 6 )
+pressed = ExtResource( 7 )
+passby_press = true
+
+[node name="Left" type="TouchScreenButton" parent="CanvasLayer"]
+position = Vector2( 58.9232, 544.239 )
+rotation = -1.57079
+scale = Vector2( 0.398959, 0.398959 )
+normal = ExtResource( 6 )
+pressed = ExtResource( 7 )
+passby_press = true
+
+[node name="Right" type="TouchScreenButton" parent="CanvasLayer"]
+position = Vector2( 276.715, 465.036 )
+rotation = 1.57079
+scale = Vector2( 0.398959, 0.398959 )
+normal = ExtResource( 6 )
+pressed = ExtResource( 7 )
+passby_press = true
+[connection signal="pressed" from="CanvasLayer/Jump" to="Player" method="_on_Jump_pressed"]
+[connection signal="released" from="CanvasLayer/Jump" to="Player" method="_on_Jump_released"]
+[connection signal="pressed" from="CanvasLayer/Left" to="Player" method="_on_Left_pressed"]
+[connection signal="released" from="CanvasLayer/Left" to="Player" method="_on_Left_released"]
+[connection signal="pressed" from="CanvasLayer/Right" to="Player" method="_on_Right_pressed"]
+[connection signal="released" from="CanvasLayer/Right" to="Player" method="_on_Right_released"]
